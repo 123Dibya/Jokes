@@ -7,7 +7,7 @@ let getJoke = () => {
     fetch(url)
     .then(data => data.json())
     .then(item =>{
-        jokeContainer.innerText+=`${item.joke}`;
+        jokeContainer.innerText=`${item.joke}`;
         jokeContainer.classList.add("fade");
 
     });
